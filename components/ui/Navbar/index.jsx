@@ -11,7 +11,7 @@ const Navbar = () => {
 
     const navigation = [
         { title: "Features", path: "#features" },
-        { title: "Our toolkit", path: "#toolkit" },
+        { title: "All Features", path: "#allfeatures" },
         { title: "Testimonials", path: "#testimonials" },
     ]
 
@@ -71,12 +71,6 @@ const Navbar = () => {
                                 })
                             }
                             <li>
-                                <NavLink
-                                    href="/get-started"
-                                    className="block font-medium text-sm text-white bg-gray-800 hover:bg-gray-600 active:bg-gray-900 md:inline"
-                                >
-                                    Let's work
-                                </NavLink>
                             </li>
                         </ul>
                     </div>

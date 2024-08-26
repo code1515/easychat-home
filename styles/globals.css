@@ -12,3 +12,13 @@
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
 }
+
+
+:root {
+    --easychat-color: #1F948C;
+}
+
+.margin-5 {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}

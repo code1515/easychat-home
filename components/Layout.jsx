@@ -6,10 +6,11 @@ const Layout = ({ children }) => {
     return (
         <>
             <Head>
-                <title>Blinder</title>
+                <title>EasyChat</title>
                 <meta name='description' content='Blinder making it simple for you to build and grow your SaaS applications, or any business idea' />
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
-                <link rel='icon' href='/favicon.ico' />
+                {/*<link rel='icon' href='/favicon.ico' />*/}
+                <link rel='icon' href='/easychat-favicon.svg' />
             </Head>
             <Navbar />
             <main>{children}</main>
