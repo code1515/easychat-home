@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  easychat-home:
+    container_name: easychat-home
+    image: docker.io/library/easychat-home:release-0.0.1
+    ports:
+      - 3000:3000
+#    environment:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100m"
+        max-file: "3"
