@@ -2,7 +2,7 @@ version: "3.9"
 services:
   easychat-home:
     container_name: easychat-home
-    image: docker.io/library/easychat-home:release-0.0.1
+    image: "docker.io/library/easychat-home:${EASY_CHAT_HOME_VERSION}"
     ports:
       - 3000:3000
 #    environment:
