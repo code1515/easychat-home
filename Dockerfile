@@ -1,18 +1,30 @@
-FROM node:18-alpine AS base-env
+#FROM node:18-alpine AS base-env
+FROM registry.cn-beijing.aliyuncs.com/doododmain/doodod:node-18-alpine AS base-env
+
+RUN npm config set registry https://registry.npmmirror.com
+
 RUN npm install -g pnpm@latest
 
 FROM base-env AS deps
+
 WORKDIR /appno
+
 COPY package.json pnpm-lock.yaml ./
+
 RUN pnpm install
 
 FROM deps AS builder
+
 ENV NODE_ENV=production
+
 WORKDIR /app
+
 COPY . .
+
 RUN pnpm build
 
 FROM builder AS runner
+
 WORKDIR /app
 
 RUN addgroup -g 1001 -S nodejs

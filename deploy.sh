@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 EASY_CHAT_HOME_VERSION=$1
-IMAGE_NAME="easychat-home"
+IMAGE_NAME="base-server"
 DOCKERFILE_PATH="Dockerfile"
 COMPOSE_FILE="docker-compose.yml"
 

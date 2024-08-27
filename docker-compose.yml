@@ -1,8 +1,8 @@
 version: "3.9"
 services:
-  easychat-home:
-    container_name: easychat-home
-    image: "docker.io/library/easychat-home:${EASY_CHAT_HOME_VERSION}"
+  base-server:
+    container_name: base-server
+    image: "docker.io/library/base-server:${EASY_CHAT_HOME_VERSION}"
     ports:
       - 3000:3000
 #    environment:
