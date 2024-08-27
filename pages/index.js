@@ -12,7 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name='robots' content='index' />
+        {/*<meta name='robots' content='index' />*/}
+        <meta name="google-site-verification" content="QbP4MzNmvuKgFZhZ9EU2_cJD9PTd1OWNplhmdvHGUGU" />
       </Head>
       <Hero />
       <LogoGrid />
