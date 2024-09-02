@@ -5,8 +5,8 @@ const Hero = () => (
         <div className="custom-screen py-28 text-gray-600">
             <div className="space-y-5 max-w-4xl mx-auto text-center">
                 <h1 className="text-4xl text-gray-800 font-extrabold mx-auto sm:text-6xl">
-                    <span style={{color: 'var(--easychat-color)'}}>Free </span>
-                        Chat with <span style={{color: 'var(--easychat-color)'}}>GPT-4o/mini</span> For Everyone!
+                    EasyChat<span style={{color: 'var(--easychat-color)'}}> Free </span>
+                       Chat with <span style={{color: 'var(--easychat-color)'}}>GPT-4o/mini</span> For Everyone!
                 </h1>
 
                 <p className="max-w-xl mx-auto"> {Description} </p>
