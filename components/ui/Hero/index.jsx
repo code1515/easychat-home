@@ -34,8 +34,7 @@ const Hero = () => (
                         Start Chat
                     </NavLink>
                 </div>
-
-            </div>
+                <script src="http://121.36.15.171:3002/api/bot-js?id=gAAAAABnETDRZmAHRd1gTW_KvQSPnkNP3agQByAAvjoZexJqZyRzS5gow1cd9mpQlGk3NF82celhBUwtH817NKW9xAA9-r3-jA==&api=http://120.46.42.36:8088" />            </div>
         </div>
     </section>
 )
