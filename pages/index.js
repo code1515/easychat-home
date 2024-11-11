@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from 'next/script';
 import GradientWrapper from "../components/GradientWrapper";
 import CTA from "../components/ui/CTA";
 import Features from "../components/ui/Features";
@@ -10,31 +11,34 @@ import ToolKit from "../components/ui/ToolKit";
 
 export default function Home() {
   return (
-    <>
-      <Head>
-        {/*<meta name='robots' content='index' />*/}
-        <meta name="google-site-verification" content="QbP4MzNmvuKgFZhZ9EU2_cJD9PTd1OWNplhmdvHGUGU" />
-      </Head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-21QW02NCV4"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-21QW02NCV4');
-        </script>
-      <Hero />
-      <LogoGrid />
-      <GradientWrapper>
-        <Features />
-        <CTA />
-      </GradientWrapper>
-      <ToolKit />
-      <GradientWrapper>
-        <Testimonials />
-      </GradientWrapper>
-      <FooterCTA />
-    </>
+      <>
+          <Head>
+              {/*<meta name='robots' content='index' />*/}
+              <meta name="google-site-verification" content="QbP4MzNmvuKgFZhZ9EU2_cJD9PTd1OWNplhmdvHGUGU"/>
+          </Head>
+          <Script
+              strategy="afterInteractive"
+              src="https://www.googletagmanager.com/gtag/js?id=G-21QW02NCV4"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-21QW02NCV4');
+              `}
+          </Script>
+          <Hero/>
+          <LogoGrid/>
+          <GradientWrapper>
+              <Features/>
+              <CTA/>
+          </GradientWrapper>
+          <ToolKit/>
+          <GradientWrapper>
+              <Testimonials/>
+          </GradientWrapper>
+          <FooterCTA/>
+      </>
   );
 }
