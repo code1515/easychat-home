@@ -13,6 +13,21 @@ export default function Home() {
     <>
       <Head>
         {/*<meta name='robots' content='index' />*/}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-21QW02NCV4"></script>
+          <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-21QW02NCV4');
+          </script>
+          <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-21QW02NCV4');
+          </script>
         <meta name="google-site-verification" content="QbP4MzNmvuKgFZhZ9EU2_cJD9PTd1OWNplhmdvHGUGU" />
       </Head>
       <Hero />
